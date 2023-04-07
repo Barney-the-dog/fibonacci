@@ -1,8 +1,8 @@
 // Итерационный подсчет n-го числа Фибоначчи
 function getFibonacci(n) {
-    let x = 1;
+    let x = 0;
     let y = 1;
-    for (let i = 3; i <= n; i++) {
+    for (let i = 2; i <= n; i++) {
   let z = x+y;
   x = y;
     y = z;
@@ -13,10 +13,10 @@ function getFibonacci(n) {
 
 // Рекурсивное вычисление n-го числа Фибоначчи
 function getFibonacci(n) {
-    if (n === 1) {
-    return 1 
+    if (n === 0) {
+    return 0 
     }
-    else if (n===2) {
+    else if (n===1) {
       return 1
     } else {
       return getFibonacci(n-1)+getFibonacci(n-2)
